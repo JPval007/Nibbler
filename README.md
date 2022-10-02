@@ -4,11 +4,17 @@ To achieve this, I built it based on a modular design for easy debugging and int
 Each module performed a specialized function inside the microprocessor, as described below:
 
 •	Program counter 
+
 •	Program Read Only Memory 64x8
+
 •	Random Access Memory (RAM) 4kx8
+
 •	Arithmetic Logic Unit
+
 •	Decoder (Control signal module)
+
 •	Accumulator
+
 •	Digital IO pins
 
 The final product was intended to run on a TinyFPGA board.
