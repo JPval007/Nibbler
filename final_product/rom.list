@@ -1,0 +1,22 @@
+00 //JC
+10 //JNC
+20 //CMPI
+30 //CMPM
+40 //LIT
+50 //IN
+60 //LD
+70 //ST
+80 //JZ
+90 //JNZ
+A0 //ADDI
+B0 //ADDM
+C0 //JMP
+D0 //OUT
+E0 //NANDI
+F0 //NANDM
+F1 //ANY(DOESN'T EXIST)
+
+//para ejecutar los saltos primero se pone el salto con el bit hexadecimal
+//más significativo
+//y luego en la siguiente línea se ponen los otros dos bits restantes
+//Ejemplo: JMP to 120 --->  71 --- 20

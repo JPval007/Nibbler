@@ -1,0 +1,16 @@
+45 //LIT 5
+D0 //OUT 0
+70 //store ACC in ram
+00 // direccion ram = 000
+40 //LIT 0 en accu
+A1 //SUMAR 1 AL ACCU
+60 //load data from 000 in ram
+00 //
+43 //LIT 3 ACC = 3
+70 //ST STORE 3 IN RAM SPACE 001
+01 //
+40 // acc = 0
+60 //load data from ramspace 001
+01 //
+C0 //jump to pc = 0
+00 //

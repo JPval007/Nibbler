@@ -1,0 +1,25 @@
+Instruction set summary
+
+JMP – unconditional jump
+JC – jump if carry
+JNC – jump if no carry
+JZ – jump if zero
+JNZ – jump if not zero
+LD and ST load a nibble from data space (RAM) to the accumulator,
+or store a nibble from the accumulator to data space.
+
+LIT loads a literal immediate nibble value to the accumulator. It might also have been named LDI.
+OUT stores a nibble from the accumulator to one of the sixteen output ports.
+IN loads a nibble from one of the sixteen input ports to the accumulator. These instructions are intended to be used for I/O.
+ADDI adds a literal immediate nibble value to the accumulator
+ADDM adds a nibble in data space to the accumulator.
+  In either case, the carry-in for the addition is 0, and the carry-out and zero
+  flags are set by the results of the addition.
+CMPI compares a literal immediate nibble value to the accumulator (subtracts the value from the accumulator)
+CMPM compares a nibble in data space to the accumulator.
+  The accumulator value is not modified, but the carry-out and zero flags are set
+  by the results of the subtraction. Because the ALU is performing a subtraction,
+  the carry-in is always 1 in order to make the math work out correctly.
+NANDI performs a NAND with an immediate value.
+NANDM performs a NAND with a data space value.
+  The carry-out and zero flags are set by the results of the NOR.
