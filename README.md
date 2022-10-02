@@ -2,6 +2,7 @@
 This project was about making a digital 4-bit microprocessor using Atom as an IDE and compiler for the verilog language.
 To achieve this, I built it based on a modular design for easy debugging and integration.
 Each module performed a specialized function inside the microprocessor, as described below:
+
 •	Program counter 
 •	Program Read Only Memory 64x8
 •	Random Access Memory (RAM) 4kx8
